@@ -1,5 +1,0 @@
-subjectAltName=@altNames
-
-[altNames]
-DNS.1=devopsnanuvem.internal
-DNS.2=localhost

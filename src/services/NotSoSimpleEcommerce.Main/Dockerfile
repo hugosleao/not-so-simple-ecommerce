@@ -11,7 +11,7 @@ COPY --from=build /nsse-backend/publish .
 EXPOSE 443
 
 RUN adduser dotnet --disabled-password
-RUN apk add curl 
+RUN apk add curl --no-cache
 
 USER dotnet
 HEALTHCHECK CMD curl -k --fail https://localhost:443/main/health
